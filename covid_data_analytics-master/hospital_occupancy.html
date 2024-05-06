@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_85daf31f0608fea0a12d702c30429ecb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_85daf31f0608fea0a12d702c30429ecb" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_85daf31f0608fea0a12d702c30429ecb = L.map(
+                "map_85daf31f0608fea0a12d702c30429ecb",
+                {
+                    center: [35.762887375145795, 84.08313219586536],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7302d418c0665d086f8db412d86fa74b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_7302d418c0665d086f8db412d86fa74b.addTo(map_85daf31f0608fea0a12d702c30429ecb);
+        
+    
+            var marker_7e5b1af0b0374f41512755e67bb25ff9 = L.marker(
+                [-27.0, 133.0],
+                {}
+            ).addTo(map_85daf31f0608fea0a12d702c30429ecb);
+        
+    
+            var icon_8808ad2d724f653981bdf35c9c096bff = L.AwesomeMarkers.icon(
+                {"Icon": "cloud", "extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7e5b1af0b0374f41512755e67bb25ff9.setIcon(icon_8808ad2d724f653981bdf35c9c096bff);
+        
+    
+        var popup_f33752f37869393d9fe56d77163ceba8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_89e0bdb78b0bb8762cc53d1bf469ac8a = $(`<div id="html_89e0bdb78b0bb8762cc53d1bf469ac8a" style="width: 100.0%; height: 100.0%;">Australia  hospital occupancy: 1567</div>`)[0];
+                popup_f33752f37869393d9fe56d77163ceba8.setContent(html_89e0bdb78b0bb8762cc53d1bf469ac8a);
+            
+        
+
+        marker_7e5b1af0b0374f41512755e67bb25ff9.bindPopup(popup_f33752f37869393d9fe56d77163ceba8)
+        ;
+
+        
+    
+    
+            var marker_c7803d4027b4b3e41b02043cc81eabc8 = L.marker(
+                [47.3333, 13.3333],
+                {}
+            ).addTo(map_85daf31f0608fea0a12d702c30429ecb);
+        
+    
+            var icon_9838db98ad69efad2008502be6a8f4e7 = L.AwesomeMarkers.icon(
+                {"Icon": "cloud", "extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c7803d4027b4b3e41b02043cc81eabc8.setIcon(icon_9838db98ad69efad2008502be6a8f4e7);
+        
+    
+        var popup_b8be16745b6bb610a46f371f66efc684 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_237726dc4e2d5a53cecc6ec852a20b7f = $(`<div id="html_237726dc4e2d5a53cecc6ec852a20b7f" style="width: 100.0%; height: 100.0%;">Austria  hospital occupancy: 830</div>`)[0];
+                popup_b8be16745b6bb610a46f371f66efc684.setContent(html_237726dc4e2d5a53cecc6ec852a20b7f);
+            
+        
+
+        marker_c7803d4027b4b3e41b02043cc81eabc8.bindPopup(popup_b8be16745b6bb610a46f371f66efc684)
+        ;
+
+        
+    
+    
+            var marker_c7269cdf17c7157d2e6d62cd202d595e = L.marker(
+                [50.8333, 4.0],
+                {}
+            ).addTo(map_85daf31f0608fea0a12d702c30429ecb);
+        
+    
+            var icon_af1bfd247a036487ddba2b8593f36790 = L.AwesomeMarkers.icon(
+                {"Icon": "cloud", "extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c7269cdf17c7157d2e6d62cd202d595e.setIcon(icon_af1bfd247a036487ddba2b8593f36790);
+        
+    
+        var popup_a0c1b84bfbf77a78a9aa1d8d7028f169 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c8deb377904b83066de8acc27962349 = $(`<div id="html_6c8deb377904b83066de8acc27962349" style="width: 100.0%; height: 100.0%;">Belgium  hospital occupancy: 1915</div>`)[0];
+                popup_a0c1b84bfbf77a78a9aa1d8d7028f169.setContent(html_6c8deb377904b83066de8acc27962349);
+            
+        
+
+        marker_c7269cdf17c7157d2e6d62cd202d595e.bindPopup(popup_a0c1b84bfbf77a78a9aa1d8d7028f169)
+        ;
+
+        
+    
+    
+            var marker_0030bb51b0afdc82d5251fd06eea264f = L.marker(
+                [43.0, 25.0],
+                {}
+            ).addTo(map_85daf31f0608fea0a12d702c30429ecb);
+        
+    
+            var icon_7481f235ded42e74294c1eecfe478baa = L.AwesomeMarkers.icon(
+                {"Icon": "cloud", "extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0030bb51b0afdc82d5251fd06eea264f.setIcon(icon_7481f235ded42e74294c1eecfe478baa);
+        
+    
+        var popup_28e65557c854a3ca11d7704ebd073a1b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f3cc2ca0347a7d880299bb31fd1214d = $(`<div id="html_0f3cc2ca0347a7d880299bb31fd1214d" style="width: 100.0%; height: 100.0%;">Bulgaria  hospital occupancy: 232</div>`)[0];
+                popup_28e65557c854a3ca11d7704ebd073a1b.setContent(html_0f3cc2ca0347a7d880299bb31fd1214d);
+            
+        
+
+        marker_0030bb51b0afdc82d5251fd06eea264f.bindPopup(popup_28e65557c854a3ca11d7704ebd073a1b)
+        ;
+
+        
+    
+    
+            var marker_6e2f0a269a013221ba07afcff501e4e9 = L.marker(
+                [60.0, -95.0],
+                {}
+            ).addTo(map_85daf31f0608fea0a12d702c30429ecb);
+        
+    
+            var icon_28e22dcafa23da2e56237de2c92fd4a6 = L.AwesomeMarkers.icon(
+                {"Icon": "cloud", "extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6e2f0a269a013221ba07afcff501e4e9.setIcon(icon_28e22dcafa23da2e56237de2c92fd4a6);
+        
+    
+        var popup_702f63a650da45a601fb8f60a5bbc821 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d24a719f49ff43798089e089d595440 = $(`<div id="html_1d24a719f49ff43798089e089d595440" style="width: 100.0%; height: 100.0%;">Canada  hospital occupancy: 3347</div>`)[0];
+                popup_702f63a650da45a601fb8f60a5bbc821.setContent(html_1d24a719f49ff43798089e089d595440);
+            
+        
+
+        marker_6e2f0a269a013221ba07afcff501e4e9.bindPopup(popup_702f63a650da45a601fb8f60a5bbc821)
+        ;
+
+        
+    
+    
+            var marker_988164954212c315d2e0c1e1157472f3 = L.marker(
+                [45.1667, 15.5],
+                {}
+            ).addTo(map_85daf31f0608fea0a12d702c30429ecb);
+        
+    
+            var icon_c27d9020f6d222e5ff8e00fb441f00fc = L.AwesomeMarkers.icon(
+                {"Icon": "cloud", "extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_988164954212c315d2e0c1e1157472f3.setIcon(icon_c27d9020f6d222e5ff8e00fb441f00fc);
+        
+    
+        var popup_a1ec30a239a28b710e4f0799716b806a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f28b3b28cad571f56150e6d89763447d = $(`<div id="html_f28b3b28cad571f56150e6d89763447d" style="width: 100.0%; height: 100.0%;">Croatia  hospital occupancy: 587</div>`)[0];
+                popup_a1ec30a239a28b710e4f0799716b806a.setContent(html_f28b3b28cad571f56150e6d89763447d);
+            
+        
+
+        marker_988164954212c315d2e0c1e1157472f3.bindPopup(popup_a1ec30a239a28b710e4f0799716b806a)
+        ;
+
+        
+    
+    
+            var marker_870b3d38bffd1011d13a8c9755364887 = L.marker(
+                [35.0, 33.0],
+                {}
+            ).addTo(map_85daf31f0608fea0a12d702c30429ecb);
+        
+    
+            var icon_0a9f24e3bade4dab108a018dce33d39c = L.AwesomeMarkers.icon(
+                {"Icon": "cloud", "extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_870b3d38bffd1011d13a8c9755364887.setIcon(icon_0a9f24e3bade4dab108a018dce33d39c);
+        
+    
+        var popup_526d5c8ef321b828cf411b1bd8d86e6e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0cb22ba200975955fdb1c532d9fa3f21 = $(`<div id="html_0cb22ba200975955fdb1c532d9fa3f21" style="width: 100.0%; height: 100.0%;">Cyprus  hospital occupancy: 41</div>`)[0];
+                popup_526d5c8ef321b828cf411b1bd8d86e6e.setContent(html_0cb22ba200975955fdb1c532d9fa3f21);
+            
+        
+
+        marker_870b3d38bffd1011d13a8c9755364887.bindPopup(popup_526d5c8ef321b828cf411b1bd8d86e6e)
+        ;
+
+        
+    
+    
+            var marker_4af30e85c5ff79011165dee80e2e91ba = L.marker(
+                [56.0, 10.0],
+                {}
+            ).addTo(map_85daf31f0608fea0a12d702c30429ecb);
+        
+    
+            var icon_b2275a9f9f73a7b9803ed094546ebaeb = L.AwesomeMarkers.icon(
+                {"Icon": "cloud", "extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4af30e85c5ff79011165dee80e2e91ba.setIcon(icon_b2275a9f9f73a7b9803ed094546ebaeb);
+        
+    
+        var popup_1a650394f975b21598c2a40bc368d41c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3fe54ad34d5c8b0c6b0bf96383ae4d8b = $(`<div id="html_3fe54ad34d5c8b0c6b0bf96383ae4d8b" style="width: 100.0%; height: 100.0%;">Denmark  hospital occupancy: 341</div>`)[0];
+                popup_1a650394f975b21598c2a40bc368d41c.setContent(html_3fe54ad34d5c8b0c6b0bf96383ae4d8b);
+            
+        
+
+        marker_4af30e85c5ff79011165dee80e2e91ba.bindPopup(popup_1a650394f975b21598c2a40bc368d41c)
+        ;
+
+        
+    
+    
+            var marker_425cbb9994704cfe08c1a076ceb726c0 = L.marker(
+                [59.0, 26.0],
+                {}
+            ).addTo(map_85daf31f0608fea0a12d702c30429ecb);
+        
+    
+            var icon_ffc2cdb08b500dc29d7537be5536e3b4 = L.AwesomeMarkers.icon(
+                {"Icon": "cloud", "extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_425cbb9994704cfe08c1a076ceb726c0.setIcon(icon_ffc2cdb08b500dc29d7537be5536e3b4);
+        
+    
+        var popup_84126f2c70b420c36a84fcbd7168f182 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6240c2ff62ef8c821fc2390d48c2641 = $(`<div id="html_b6240c2ff62ef8c821fc2390d48c2641" style="width: 100.0%; height: 100.0%;">Estonia  hospital occupancy: 138</div>`)[0];
+                popup_84126f2c70b420c36a84fcbd7168f182.setContent(html_b6240c2ff62ef8c821fc2390d48c2641);
+            
+        
+
+        marker_425cbb9994704cfe08c1a076ceb726c0.bindPopup(popup_84126f2c70b420c36a84fcbd7168f182)
+        ;
+
+        
+    
+    
+            var marker_334106861323995b879df1757152cfb6 = L.marker(
+                [64.0, 26.0],
+                {}
+            ).addTo(map_85daf31f0608fea0a12d702c30429ecb);
+        
+    
+            var icon_b5b28a302eae100fb20ca7f54714361d = L.AwesomeMarkers.icon(
+                {"Icon": "cloud", "extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_334106861323995b879df1757152cfb6.setIcon(icon_b5b28a302eae100fb20ca7f54714361d);
+        
+    
+        var popup_3f839f19cf9e61fed9f59378b756ead2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e9f724a3cfb276eeedccfcc407e86c04 = $(`<div id="html_e9f724a3cfb276eeedccfcc407e86c04" style="width: 100.0%; height: 100.0%;">Finland  hospital occupancy: 930</div>`)[0];
+                popup_3f839f19cf9e61fed9f59378b756ead2.setContent(html_e9f724a3cfb276eeedccfcc407e86c04);
+            
+        
+
+        marker_334106861323995b879df1757152cfb6.bindPopup(popup_3f839f19cf9e61fed9f59378b756ead2)
+        ;
+
+        
+    
+    
+            var marker_ed6df6e7b89fa0dd8142370953c56021 = L.marker(
+                [46.0, 2.0],
+                {}
+            ).addTo(map_85daf31f0608fea0a12d702c30429ecb);
+        
+    
+            var icon_f81ff82087d4c75f31e382c12f2a3ed0 = L.AwesomeMarkers.icon(
+                {"Icon": "cloud", "extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ed6df6e7b89fa0dd8142370953c56021.setIcon(icon_f81ff82087d4c75f31e382c12f2a3ed0);
+        
+    
+        var popup_fd914c53b3bb3348972bcbb7051c7464 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba68cc308b11b0d63bcebc99ceebc533 = $(`<div id="html_ba68cc308b11b0d63bcebc99ceebc533" style="width: 100.0%; height: 100.0%;">France  hospital occupancy: 13149</div>`)[0];
+                popup_fd914c53b3bb3348972bcbb7051c7464.setContent(html_ba68cc308b11b0d63bcebc99ceebc533);
+            
+        
+
+        marker_ed6df6e7b89fa0dd8142370953c56021.bindPopup(popup_fd914c53b3bb3348972bcbb7051c7464)
+        ;
+
+        
+    
+    
+            var marker_3b83d85687240afa35e6cfdc288cd7a1 = L.marker(
+                [53.0, -8.0],
+                {}
+            ).addTo(map_85daf31f0608fea0a12d702c30429ecb);
+        
+    
+            var icon_b3f310ca118b268075503cf1bdfbc7cb = L.AwesomeMarkers.icon(
+                {"Icon": "cloud", "extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3b83d85687240afa35e6cfdc288cd7a1.setIcon(icon_b3f310ca118b268075503cf1bdfbc7cb);
+        
+    
+        var popup_bdac3a2e29525a3fec2e5a2d748f59f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_572f7474a1ee84701987f5921c55c9df = $(`<div id="html_572f7474a1ee84701987f5921c55c9df" style="width: 100.0%; height: 100.0%;">Ireland  hospital occupancy: 293</div>`)[0];
+                popup_bdac3a2e29525a3fec2e5a2d748f59f5.setContent(html_572f7474a1ee84701987f5921c55c9df);
+            
+        
+
+        marker_3b83d85687240afa35e6cfdc288cd7a1.bindPopup(popup_bdac3a2e29525a3fec2e5a2d748f59f5)
+        ;
+
+        
+    
+    
+            var marker_00f25460650ba05ec27d869de634c293 = L.marker(
+                [31.5, 34.75],
+                {}
+            ).addTo(map_85daf31f0608fea0a12d702c30429ecb);
+        
+    
+            var icon_83ae008c7b03e9497542e33950486eb1 = L.AwesomeMarkers.icon(
+                {"Icon": "cloud", "extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_00f25460650ba05ec27d869de634c293.setIcon(icon_83ae008c7b03e9497542e33950486eb1);
+        
+    
+        var popup_7d9ce22e923e4eaa0e85b065e55eacee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f5e087988c7843544aba8f6c812f050 = $(`<div id="html_2f5e087988c7843544aba8f6c812f050" style="width: 100.0%; height: 100.0%;">Israel  hospital occupancy: 332</div>`)[0];
+                popup_7d9ce22e923e4eaa0e85b065e55eacee.setContent(html_2f5e087988c7843544aba8f6c812f050);
+            
+        
+
+        marker_00f25460650ba05ec27d869de634c293.bindPopup(popup_7d9ce22e923e4eaa0e85b065e55eacee)
+        ;
+
+        
+    
+    
+            var marker_958e6d0246a1d5161f8c8f4c697bc7dc = L.marker(
+                [42.8333, 12.8333],
+                {}
+            ).addTo(map_85daf31f0608fea0a12d702c30429ecb);
+        
+    
+            var icon_c786cc035cd6bb1f59e02015949757c8 = L.AwesomeMarkers.icon(
+                {"Icon": "cloud", "extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_958e6d0246a1d5161f8c8f4c697bc7dc.setIcon(icon_c786cc035cd6bb1f59e02015949757c8);
+        
+    
+        var popup_04ca63e05a8caeeab1a0d7e3c8e2f9b2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_43cdbae34416c38379ed9b22d65add79 = $(`<div id="html_43cdbae34416c38379ed9b22d65add79" style="width: 100.0%; height: 100.0%;">Italy  hospital occupancy: 2617</div>`)[0];
+                popup_04ca63e05a8caeeab1a0d7e3c8e2f9b2.setContent(html_43cdbae34416c38379ed9b22d65add79);
+            
+        
+
+        marker_958e6d0246a1d5161f8c8f4c697bc7dc.bindPopup(popup_04ca63e05a8caeeab1a0d7e3c8e2f9b2)
+        ;
+
+        
+    
+    
+            var marker_53fe1dd890f931a9f6095136fb7db3f2 = L.marker(
+                [36.0, 138.0],
+                {}
+            ).addTo(map_85daf31f0608fea0a12d702c30429ecb);
+        
+    
+            var icon_6c59e65ca78ec7fc754728a3cbda6747 = L.AwesomeMarkers.icon(
+                {"Icon": "cloud", "extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_53fe1dd890f931a9f6095136fb7db3f2.setIcon(icon_6c59e65ca78ec7fc754728a3cbda6747);
+        
+    
+        var popup_e1fc6ce0b621018a0b2e703318a1efb0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1055668416b756b7c79cd62ab6426b17 = $(`<div id="html_1055668416b756b7c79cd62ab6426b17" style="width: 100.0%; height: 100.0%;">Japan  hospital occupancy: 3983</div>`)[0];
+                popup_e1fc6ce0b621018a0b2e703318a1efb0.setContent(html_1055668416b756b7c79cd62ab6426b17);
+            
+        
+
+        marker_53fe1dd890f931a9f6095136fb7db3f2.bindPopup(popup_e1fc6ce0b621018a0b2e703318a1efb0)
+        ;
+
+        
+    
+    
+            var marker_034890de798a56e90303a23af41a883e = L.marker(
+                [56.0, 24.0],
+                {}
+            ).addTo(map_85daf31f0608fea0a12d702c30429ecb);
+        
+    
+            var icon_16625d6a75bd696da2916f701e69ec1f = L.AwesomeMarkers.icon(
+                {"Icon": "cloud", "extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_034890de798a56e90303a23af41a883e.setIcon(icon_16625d6a75bd696da2916f701e69ec1f);
+        
+    
+        var popup_8c782a384e7faef579d833faba7e040a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e3da56ace3733755d3b714a5aa3dcee0 = $(`<div id="html_e3da56ace3733755d3b714a5aa3dcee0" style="width: 100.0%; height: 100.0%;">Lithuania  hospital occupancy: 108</div>`)[0];
+                popup_8c782a384e7faef579d833faba7e040a.setContent(html_e3da56ace3733755d3b714a5aa3dcee0);
+            
+        
+
+        marker_034890de798a56e90303a23af41a883e.bindPopup(popup_8c782a384e7faef579d833faba7e040a)
+        ;
+
+        
+    
+    
+            var marker_32d9d1c732ea746b7d7f3742a491e9d0 = L.marker(
+                [49.75, 6.1667],
+                {}
+            ).addTo(map_85daf31f0608fea0a12d702c30429ecb);
+        
+    
+            var icon_7c61644e7ad069226c8aa44edca80cf0 = L.AwesomeMarkers.icon(
+                {"Icon": "cloud", "extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_32d9d1c732ea746b7d7f3742a491e9d0.setIcon(icon_7c61644e7ad069226c8aa44edca80cf0);
+        
+    
+        var popup_8aca58ecf1db48d1e9d718f935334e4b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f6b866fba74d8e894ac3994962d7366c = $(`<div id="html_f6b866fba74d8e894ac3994962d7366c" style="width: 100.0%; height: 100.0%;">Luxembourg  hospital occupancy: 17</div>`)[0];
+                popup_8aca58ecf1db48d1e9d718f935334e4b.setContent(html_f6b866fba74d8e894ac3994962d7366c);
+            
+        
+
+        marker_32d9d1c732ea746b7d7f3742a491e9d0.bindPopup(popup_8aca58ecf1db48d1e9d718f935334e4b)
+        ;
+
+        
+    
+    
+            var marker_b85871cf3b728db0403d92f0ca412b80 = L.marker(
+                [2.5, 112.5],
+                {}
+            ).addTo(map_85daf31f0608fea0a12d702c30429ecb);
+        
+    
+            var icon_b98c87b92e61d841bbbfb0dc4e786c84 = L.AwesomeMarkers.icon(
+                {"Icon": "cloud", "extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b85871cf3b728db0403d92f0ca412b80.setIcon(icon_b98c87b92e61d841bbbfb0dc4e786c84);
+        
+    
+        var popup_dd0d25bb2e8653089f854c55e928ecde = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a1618e877cc1899104834a963485e6a3 = $(`<div id="html_a1618e877cc1899104834a963485e6a3" style="width: 100.0%; height: 100.0%;">Malaysia  hospital occupancy: 233</div>`)[0];
+                popup_dd0d25bb2e8653089f854c55e928ecde.setContent(html_a1618e877cc1899104834a963485e6a3);
+            
+        
+
+        marker_b85871cf3b728db0403d92f0ca412b80.bindPopup(popup_dd0d25bb2e8653089f854c55e928ecde)
+        ;
+
+        
+    
+    
+            var marker_cf6759d78a6e111325e376bb1f558f21 = L.marker(
+                [52.5, 5.75],
+                {}
+            ).addTo(map_85daf31f0608fea0a12d702c30429ecb);
+        
+    
+            var icon_96e96bf7ec627b18d192051022d59850 = L.AwesomeMarkers.icon(
+                {"Icon": "cloud", "extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cf6759d78a6e111325e376bb1f558f21.setIcon(icon_96e96bf7ec627b18d192051022d59850);
+        
+    
+        var popup_289cd09c36928cdaf0bb4e8713084c18 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ccbe6220859f016e517490294fed6e2 = $(`<div id="html_1ccbe6220859f016e517490294fed6e2" style="width: 100.0%; height: 100.0%;">Netherlands  hospital occupancy: 497</div>`)[0];
+                popup_289cd09c36928cdaf0bb4e8713084c18.setContent(html_1ccbe6220859f016e517490294fed6e2);
+            
+        
+
+        marker_cf6759d78a6e111325e376bb1f558f21.bindPopup(popup_289cd09c36928cdaf0bb4e8713084c18)
+        ;
+
+        
+    
+    
+            var marker_f72338d6cc239734ac580fdd2c44f32c = L.marker(
+                [62.0, 10.0],
+                {}
+            ).addTo(map_85daf31f0608fea0a12d702c30429ecb);
+        
+    
+            var icon_b4dea84f9400e8c5d9460bd44f640e02 = L.AwesomeMarkers.icon(
+                {"Icon": "cloud", "extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f72338d6cc239734ac580fdd2c44f32c.setIcon(icon_b4dea84f9400e8c5d9460bd44f640e02);
+        
+    
+        var popup_9b9a1af8d901f12acc4a9e079f5ca2fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a578a7e313d52df7b94f4250b666807 = $(`<div id="html_7a578a7e313d52df7b94f4250b666807" style="width: 100.0%; height: 100.0%;">Norway  hospital occupancy: 467</div>`)[0];
+                popup_9b9a1af8d901f12acc4a9e079f5ca2fc.setContent(html_7a578a7e313d52df7b94f4250b666807);
+            
+        
+
+        marker_f72338d6cc239734ac580fdd2c44f32c.bindPopup(popup_9b9a1af8d901f12acc4a9e079f5ca2fc)
+        ;
+
+        
+    
+    
+            var marker_8ab6eeb99d727b3a648ebad3340777f9 = L.marker(
+                [52.0, 20.0],
+                {}
+            ).addTo(map_85daf31f0608fea0a12d702c30429ecb);
+        
+    
+            var icon_2fd6c6281614b5e0f9512b0ff03280d5 = L.AwesomeMarkers.icon(
+                {"Icon": "cloud", "extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8ab6eeb99d727b3a648ebad3340777f9.setIcon(icon_2fd6c6281614b5e0f9512b0ff03280d5);
+        
+    
+        var popup_383ae03601e79d21ad9ea4a826e5df79 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1afafa5ae27e9d8d79503ee6c356bc99 = $(`<div id="html_1afafa5ae27e9d8d79503ee6c356bc99" style="width: 100.0%; height: 100.0%;">Poland  hospital occupancy: 3086</div>`)[0];
+                popup_383ae03601e79d21ad9ea4a826e5df79.setContent(html_1afafa5ae27e9d8d79503ee6c356bc99);
+            
+        
+
+        marker_8ab6eeb99d727b3a648ebad3340777f9.bindPopup(popup_383ae03601e79d21ad9ea4a826e5df79)
+        ;
+
+        
+    
+    
+            var marker_ffe0e47384d710a8536125b097f6540e = L.marker(
+                [39.5, -8.0],
+                {}
+            ).addTo(map_85daf31f0608fea0a12d702c30429ecb);
+        
+    
+            var icon_7947dcc2f522eeb5e69055f045cf2a00 = L.AwesomeMarkers.icon(
+                {"Icon": "cloud", "extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ffe0e47384d710a8536125b097f6540e.setIcon(icon_7947dcc2f522eeb5e69055f045cf2a00);
+        
+    
+        var popup_47097d72c6697db06c785a9b7d7c0f5f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4782776382d5629d5865723dc437658 = $(`<div id="html_a4782776382d5629d5865723dc437658" style="width: 100.0%; height: 100.0%;">Portugal  hospital occupancy: 571</div>`)[0];
+                popup_47097d72c6697db06c785a9b7d7c0f5f.setContent(html_a4782776382d5629d5865723dc437658);
+            
+        
+
+        marker_ffe0e47384d710a8536125b097f6540e.bindPopup(popup_47097d72c6697db06c785a9b7d7c0f5f)
+        ;
+
+        
+    
+    
+            var marker_525ee208b49c361b2f249597fa2d853d = L.marker(
+                [46.0, 25.0],
+                {}
+            ).addTo(map_85daf31f0608fea0a12d702c30429ecb);
+        
+    
+            var icon_0a54d24a141cbb2017c3f7d0ecaf0239 = L.AwesomeMarkers.icon(
+                {"Icon": "cloud", "extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_525ee208b49c361b2f249597fa2d853d.setIcon(icon_0a54d24a141cbb2017c3f7d0ecaf0239);
+        
+    
+        var popup_14ecf1f523680e33a5b59cf8545d611f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df6823d1639fae5956635fb8d148512f = $(`<div id="html_df6823d1639fae5956635fb8d148512f" style="width: 100.0%; height: 100.0%;">Romania  hospital occupancy: 1743</div>`)[0];
+                popup_14ecf1f523680e33a5b59cf8545d611f.setContent(html_df6823d1639fae5956635fb8d148512f);
+            
+        
+
+        marker_525ee208b49c361b2f249597fa2d853d.bindPopup(popup_14ecf1f523680e33a5b59cf8545d611f)
+        ;
+
+        
+    
+    
+            var marker_9a6688bdc0555a76bfdef5b1e4a0f9e8 = L.marker(
+                [44.0, 21.0],
+                {}
+            ).addTo(map_85daf31f0608fea0a12d702c30429ecb);
+        
+    
+            var icon_e473fcdcd1250d35461008c92a9ef1ef = L.AwesomeMarkers.icon(
+                {"Icon": "cloud", "extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9a6688bdc0555a76bfdef5b1e4a0f9e8.setIcon(icon_e473fcdcd1250d35461008c92a9ef1ef);
+        
+    
+        var popup_d8d8c798118c650d4c0b168c6863747b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_91285be2092ad9c9e81a70ea64e6ebb4 = $(`<div id="html_91285be2092ad9c9e81a70ea64e6ebb4" style="width: 100.0%; height: 100.0%;">Serbia  hospital occupancy: 163</div>`)[0];
+                popup_d8d8c798118c650d4c0b168c6863747b.setContent(html_91285be2092ad9c9e81a70ea64e6ebb4);
+            
+        
+
+        marker_9a6688bdc0555a76bfdef5b1e4a0f9e8.bindPopup(popup_d8d8c798118c650d4c0b168c6863747b)
+        ;
+
+        
+    
+    
+            var marker_d1d0dd0fd1ebf1b1d7bf976e74548df2 = L.marker(
+                [48.6667, 19.5],
+                {}
+            ).addTo(map_85daf31f0608fea0a12d702c30429ecb);
+        
+    
+            var icon_56092310a411cef9a4e1822e70b5b86d = L.AwesomeMarkers.icon(
+                {"Icon": "cloud", "extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d1d0dd0fd1ebf1b1d7bf976e74548df2.setIcon(icon_56092310a411cef9a4e1822e70b5b86d);
+        
+    
+        var popup_e04f8665dfba6fc1c8543475160b995c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a3f8ca969401c2155941739c148ece1 = $(`<div id="html_2a3f8ca969401c2155941739c148ece1" style="width: 100.0%; height: 100.0%;">Slovakia  hospital occupancy: 460</div>`)[0];
+                popup_e04f8665dfba6fc1c8543475160b995c.setContent(html_2a3f8ca969401c2155941739c148ece1);
+            
+        
+
+        marker_d1d0dd0fd1ebf1b1d7bf976e74548df2.bindPopup(popup_e04f8665dfba6fc1c8543475160b995c)
+        ;
+
+        
+    
+    
+            var marker_e498f8db65a3c655c5cb37e192dc82e7 = L.marker(
+                [46.0, 15.0],
+                {}
+            ).addTo(map_85daf31f0608fea0a12d702c30429ecb);
+        
+    
+            var icon_c397e502c71e1b2250214cf771aabcfb = L.AwesomeMarkers.icon(
+                {"Icon": "cloud", "extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e498f8db65a3c655c5cb37e192dc82e7.setIcon(icon_c397e502c71e1b2250214cf771aabcfb);
+        
+    
+        var popup_7f76ad004b06e793dadd742c8f1c90cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae327de7fb751d58042d4918dea00e1e = $(`<div id="html_ae327de7fb751d58042d4918dea00e1e" style="width: 100.0%; height: 100.0%;">Slovenia  hospital occupancy: 47</div>`)[0];
+                popup_7f76ad004b06e793dadd742c8f1c90cb.setContent(html_ae327de7fb751d58042d4918dea00e1e);
+            
+        
+
+        marker_e498f8db65a3c655c5cb37e192dc82e7.bindPopup(popup_7f76ad004b06e793dadd742c8f1c90cb)
+        ;
+
+        
+    
+    
+            var marker_cf33417c14d58fd57263022a953f2989 = L.marker(
+                [-29.0, 24.0],
+                {}
+            ).addTo(map_85daf31f0608fea0a12d702c30429ecb);
+        
+    
+            var icon_a80d94b1a2c353b19b014ffdaa119dd5 = L.AwesomeMarkers.icon(
+                {"Icon": "cloud", "extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cf33417c14d58fd57263022a953f2989.setIcon(icon_a80d94b1a2c353b19b014ffdaa119dd5);
+        
+    
+        var popup_0b73ebec76d6b1adc6c99fbdcbefb1d6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0eb6a12c4aed94ebcfb9767fc31b08bf = $(`<div id="html_0eb6a12c4aed94ebcfb9767fc31b08bf" style="width: 100.0%; height: 100.0%;">South Africa  hospital occupancy: 1035</div>`)[0];
+                popup_0b73ebec76d6b1adc6c99fbdcbefb1d6.setContent(html_0eb6a12c4aed94ebcfb9767fc31b08bf);
+            
+        
+
+        marker_cf33417c14d58fd57263022a953f2989.bindPopup(popup_0b73ebec76d6b1adc6c99fbdcbefb1d6)
+        ;
+
+        
+    
+    
+            var marker_d8cd1aa288bbb90156f26f3ee50bbadb = L.marker(
+                [40.0, -4.0],
+                {}
+            ).addTo(map_85daf31f0608fea0a12d702c30429ecb);
+        
+    
+            var icon_18e855a1e01b6fd23869aa36258d785e = L.AwesomeMarkers.icon(
+                {"Icon": "cloud", "extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d8cd1aa288bbb90156f26f3ee50bbadb.setIcon(icon_18e855a1e01b6fd23869aa36258d785e);
+        
+    
+        var popup_514f61854cb939f86c76252f040fba27 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bce2f9da9cac1bae7e199cd001865670 = $(`<div id="html_bce2f9da9cac1bae7e199cd001865670" style="width: 100.0%; height: 100.0%;">Spain  hospital occupancy: 2031</div>`)[0];
+                popup_514f61854cb939f86c76252f040fba27.setContent(html_bce2f9da9cac1bae7e199cd001865670);
+            
+        
+
+        marker_d8cd1aa288bbb90156f26f3ee50bbadb.bindPopup(popup_514f61854cb939f86c76252f040fba27)
+        ;
+
+        
+    
+    
+            var marker_8b19bb7536d03f80c2f73b2d4a57afc2 = L.marker(
+                [62.0, 15.0],
+                {}
+            ).addTo(map_85daf31f0608fea0a12d702c30429ecb);
+        
+    
+            var icon_13f3e20735b79ba3f7610743534c9e7a = L.AwesomeMarkers.icon(
+                {"Icon": "cloud", "extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8b19bb7536d03f80c2f73b2d4a57afc2.setIcon(icon_13f3e20735b79ba3f7610743534c9e7a);
+        
+    
+        var popup_2f4c2e709c54e9a15e173a274547bd03 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d1ba08b0fdb48b17d54dc87b111080e = $(`<div id="html_9d1ba08b0fdb48b17d54dc87b111080e" style="width: 100.0%; height: 100.0%;">Sweden  hospital occupancy: 470</div>`)[0];
+                popup_2f4c2e709c54e9a15e173a274547bd03.setContent(html_9d1ba08b0fdb48b17d54dc87b111080e);
+            
+        
+
+        marker_8b19bb7536d03f80c2f73b2d4a57afc2.bindPopup(popup_2f4c2e709c54e9a15e173a274547bd03)
+        ;
+
+        
+    
+    
+            var marker_766bbd7b3b77fae32b70873bd61eb8d9 = L.marker(
+                [47.0, 8.0],
+                {}
+            ).addTo(map_85daf31f0608fea0a12d702c30429ecb);
+        
+    
+            var icon_8a8efbcc2549f71b84c827f3f2b33951 = L.AwesomeMarkers.icon(
+                {"Icon": "cloud", "extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_766bbd7b3b77fae32b70873bd61eb8d9.setIcon(icon_8a8efbcc2549f71b84c827f3f2b33951);
+        
+    
+        var popup_e8a50bcb3b357d6b8b261e3a9fcccfa3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e2e761af72e9779e5fca13106b14e9a5 = $(`<div id="html_e2e761af72e9779e5fca13106b14e9a5" style="width: 100.0%; height: 100.0%;">Switzerland  hospital occupancy: 524</div>`)[0];
+                popup_e8a50bcb3b357d6b8b261e3a9fcccfa3.setContent(html_e2e761af72e9779e5fca13106b14e9a5);
+            
+        
+
+        marker_766bbd7b3b77fae32b70873bd61eb8d9.bindPopup(popup_e8a50bcb3b357d6b8b261e3a9fcccfa3)
+        ;
+
+        
+    
+    
+            var marker_567512c822a84c1eda7b078b8b638100 = L.marker(
+                [54.0, -2.0],
+                {}
+            ).addTo(map_85daf31f0608fea0a12d702c30429ecb);
+        
+    
+            var icon_5bd723dcda10d4e4092abd1cfb6ea939 = L.AwesomeMarkers.icon(
+                {"Icon": "cloud", "extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_567512c822a84c1eda7b078b8b638100.setIcon(icon_5bd723dcda10d4e4092abd1cfb6ea939);
+        
+    
+        var popup_80e0511ac74cf254252169025c130e65 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_03ffe23970cc48d3ab19b83a78525db6 = $(`<div id="html_03ffe23970cc48d3ab19b83a78525db6" style="width: 100.0%; height: 100.0%;">United Kingdom  hospital occupancy: 9952</div>`)[0];
+                popup_80e0511ac74cf254252169025c130e65.setContent(html_03ffe23970cc48d3ab19b83a78525db6);
+            
+        
+
+        marker_567512c822a84c1eda7b078b8b638100.bindPopup(popup_80e0511ac74cf254252169025c130e65)
+        ;
+
+        
+    
+    
+            var marker_2fae924c446b51b62ad11b587704f57a = L.marker(
+                [38.0, -97.0],
+                {}
+            ).addTo(map_85daf31f0608fea0a12d702c30429ecb);
+        
+    
+            var icon_5682cd8d2926988a778f46dd7020fc02 = L.AwesomeMarkers.icon(
+                {"Icon": "cloud", "extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2fae924c446b51b62ad11b587704f57a.setIcon(icon_5682cd8d2926988a778f46dd7020fc02);
+        
+    
+        var popup_f1b87838ab151528a32e0c8bef3a44b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_337f4914818633108a59785bd2bcecf2 = $(`<div id="html_337f4914818633108a59785bd2bcecf2" style="width: 100.0%; height: 100.0%;">United States  hospital occupancy: 13920</div>`)[0];
+                popup_f1b87838ab151528a32e0c8bef3a44b0.setContent(html_337f4914818633108a59785bd2bcecf2);
+            
+        
+
+        marker_2fae924c446b51b62ad11b587704f57a.bindPopup(popup_f1b87838ab151528a32e0c8bef3a44b0)
+        ;
+
+        
+    
+</script>
+</html>
